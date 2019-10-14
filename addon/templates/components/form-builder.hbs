@@ -1,0 +1,26 @@
+{{!-- Add Field in Form --}}
+
+<select onchange={{action (mut selectedField) value="target.value"}}>
+  {{#each availableFields as |field|}}
+    <option value={{field.value}} selected={{eq field.value selectedField}}>{{field.name}}</option>
+  {{/each}}
+</select>
+
+<button {{action 'addField'}}>
+  Add Field
+</button>
+
+<h3>Editor</h3>
+{{#each form as |field|}}
+  <h4>{{field.title}}</h4>
+  {{field-editor field=field}}
+  <button {{action 'deleteField' field}}>
+    Delete Field
+  </button>
+{{/each}}
+
+<h3>Preview</h3>
+{{#each form as |field|}}
+  <h4>{{field.title}}</h4>
+  {{field-view field=field}}
+{{/each}}

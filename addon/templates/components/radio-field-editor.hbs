@@ -1,0 +1,13 @@
+<Input type="text" @value={{field.title}} />
+<Input type="text" @value={{field.name}} />
+
+<button {{action 'addOption'}}>
+  Add Option
+</button>
+
+{{#each field.options as |option|}}
+  {{radio-field-option-editor option=option}}
+  <button {{action 'deleteOption' option}}>
+    Delete Option
+  </button>
+{{/each}}

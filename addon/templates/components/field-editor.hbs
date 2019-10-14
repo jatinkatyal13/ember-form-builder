@@ -1,0 +1,5 @@
+{{#if (eq field.type "text")}}
+  {{text-field-editor field=field}}
+{{else if (eq field.type "radio")}}
+  {{radio-field-editor field=field}}
+{{/if}}
