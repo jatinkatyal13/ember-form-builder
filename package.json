@@ -1,13 +1,14 @@
 {
-  "name": "ember-form-builder",
-  "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "name": "ember-form-builder-json",
+  "version": "1.0.0",
+  "description": "Ember Addon form building and rendering simple forms",
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "forms"
   ],
-  "repository": "",
+  "repository": "https://github.com/jatinkatyal13/ember-form-builder",
   "license": "MIT",
-  "author": "",
+  "author": "Jatin Katyal <jatin.katyal13@gmail.com>",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -51,7 +52,7 @@
     "qunit-dom": "^0.8.4"
   },
   "engines": {
-    "node": "8.* || >= 10.*"
+    "node": "6.* || 8.* || >= 10.*"
   },
   "ember-addon": {
     "configPath": "tests/dummy/config"
